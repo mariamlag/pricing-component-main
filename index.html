@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="title">
+    <p class="simple">
+      Simple, traffic-based pricing
+    </p>
+    <p class="sign">  
+      Sign-up for our 30-day trial. No credit card required. 
+    </p>
+  </div>
+  
+<div class="container">
+  <div class="three-div">
+    <div class="k">
+      100k Pageviews
+    </div>
+
+    <div class="slidercontainer">
+      <input type="range" id="input" class="slider" min="0" value="" max="32" name="value">
+    </div>
+    <div class="month">
+      <p class="nmb-month" id="result" placeholder="$00.00">
+         $ 16.00
+      </p>
+      <p class="txt-month" id="month">
+        / month
+      </p>
+    </div>
+  </div>
+
+  <div class="second-div">
+    <p class="txt-second">
+      Monthly Billing
+    </p>
+    <div>
+        <input type="checkbox" id="switch"
+        class="checkbox" />
+        <label for="switch" class="toggle">
+    </div>
+    <p class="txt-second">
+      Yearly Billing
+    </p>
+    <div class="discount">
+      <p>
+        -25% 
+      </p>
+      <p class="dis">
+        discount
+      </p>
+    </div>
+  </div>
+
+
+  <hr>
+
+  <div class="two">
+    <div class="check-div">
+      <div class="first">
+        <img src="images/icon-check.svg" alt="">
+        Unlimited websites
+      </div>
+      <div class="second">
+        <img src="images/icon-check.svg" alt="">
+        100% data ownership
+      </div>
+      <div class="last">
+        <img src="images/icon-check.svg" alt="">
+        Email reports
+      </div>
+    </div>
+
+    <div class="Start">
+      <p>
+        Start my trial
+      </p>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+<script src="inter.js"></script>
+</html>

@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+body{
+    background: url(images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    font-family: 'manrope';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    background: url(images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12rem;
+    width: 32.6rem;
+    height: 14.6rem;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 5.7rem;
+}
+
+.title, .container, .three-div, .second-div, .discount, .check-div, .Start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.simple{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    color: #293356;
+}
+.sign{
+    margin-top: 0.8rem;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 23px;
+    color: #848EAD;
+    width: 17rem;
+    height: 4.6rem;
+}
+
+.container{
+    flex-direction: column;
+    color: #848EAD;
+    width: 32.7rem;
+    background: white;
+    box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+    border-radius: 8px;
+    padding: 3.4rem 0 3.2rem 0;
+}
+.k{
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1.71429px;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+.three-div{
+    width: 100%;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 2.4rem 0 2.4rem;
+}
+
+.slidercontainer{
+    width: 100%;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;   
+    background: #ECF0FB;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    background: linear-gradient(to right, rgb(164, 243, 235) 0%, rgb(164, 243, 235) 53.125%, rgb(236, 240, 251) 53.125%, rgb(236, 240, 251));
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background: #10D8C4;
+    background-image: url(images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
+    cursor: pointer;
+    box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+  }
+.month{
+   display: flex;
+   flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.nmb-month{
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: right;
+    letter-spacing: -0.8px;
+    color: #293356;
+}
+
+.txt-month{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #848EAD;
+}
+
+.second-div{
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 3.4rem;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #848EAD;
+}
+
+.toggle {
+    position : relative ;
+    display : inline-block;
+    width : 4.3rem;
+    height : 2.2rem;
+    background-color: #cfd8ef;
+    border-radius: 1.5rem;
+}
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    background-color: white;
+    top: 4px;
+    left: 4px;
+    transition:  all 0.5s;
+}
+.checkbox:checked + .toggle::after {
+    left : 2.5rem;
+}
+.checkbox:checked + .toggle {
+    background: #7AEADF;
+}
+.checkbox {
+    display : none;
+}
+
+.discount{
+    width: 4.1rem;
+    height: 1.9rem;
+    border-radius:0.95rem;
+    background: #FEEDE8;
+    color: #FF8D68;
+    flex-direction: column;
+}
+.dis{
+    display: none;
+}
+hr{
+    width: 100%;
+    height: 0.1rem;
+    margin-top: 3.8rem;
+    color: #ECF0FB;
+    opacity: 0.2;
+}
+.check-div{
+    margin-top: 2.4rem;
+    flex-direction: column;
+    gap: 1.1rem;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.first, .second, .last{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+img{
+    height: 0.6rem;
+    width: 0.7rem;
+}
+
+.Start{
+    width: 17rem;
+    height: 4.1rem;
+    background: #293356;
+    border-radius: 20.5px;
+    margin-top: 3.3rem;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #BECDFF;
+
+}
+
+.Start:hover{
+    color: white;
+}
+
+
+@media only screen and (min-width:1440px){
+    .title{
+        background-size: 12rem;
+        width: 39.5rem;
+        height: 14rem;
+        margin-top: 8rem;
+    }
+    
+    .simple{
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .sign{
+        margin-top: 1.2rem;
+        font-size: 15px;
+        line-height: 20px;
+        width: 39rem;
+    }
+    .container{
+        margin-top: 5.4rem;
+        width: 54rem;
+        padding: 4rem 0 3.3rem 0;
+    }
+    .k{
+        order: 1;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+    }
+    .three-div{
+        flex-direction: initial;
+        flex-wrap: wrap;
+        padding: 0 4.8rem 0 4.8rem;
+        justify-content: space-between;
+    }
+    .slidercontainer{
+        order: 3;
+    }
+    .month{
+        order: 2;
+    }
+
+    .month{
+         gap: 0.8rem;
+     }
+     
+     .nmb-month{
+         font-size: 40px;
+         line-height: 55px;
+         letter-spacing: -1px;
+
+     }
+     
+     .txt-month{
+         font-size: 16px;
+         line-height: 22px;
+     }
+
+     .second-div{
+        gap: 1.6rem;
+        margin-top: 4rem;
+     }
+
+     .discount{
+        font-size: 1rem;
+        width: 8rem;
+        flex-direction: row;
+        gap: 0.1rem;
+    }
+    .dis{
+        display: flex;
+    }
+
+    hr{
+        margin-top: 4rem;
+    }
+    .two{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 4.8rem 0 4.8rem;
+        align-items: center;
+    }
+    .check-div{
+        margin-top: 3.2rem;
+        align-items: flex-start;
+    }
+}
+
+
+
+
+
+
+
+
